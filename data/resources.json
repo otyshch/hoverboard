@@ -118,6 +118,13 @@
   "mapBlock": {
     "title": "Location"
   },
+  "speakersBlock": {
+    "title": "Speakers",
+    "callToAction": {
+      "label": "View all speakers",
+      "link": "/speakers/"
+    }
+  },
   "subscribeBlock": {
     "callToAction": {
       "description": "Get notified about the important conference updates",
