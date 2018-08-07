@@ -1,10 +1,10 @@
 {
   "title": "GDG DevFest Wroclaw 2018",
-  "description": "Be a hero. Be a GDG!",
+  "description": "",
   "image": "images/social-share.jpg",
   "keywords":
     "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
-  "dates": "October 27-28, 2018",
+  "dates": "October 26-27, 2018",
   "partnershipProposition": "https://bit.ly/dfua17-partners",
   "share": "Share",
   "followOur": "Follow our",
@@ -25,6 +25,7 @@
   "time": "Time",
   "faq": "/data/faq.md",
   "cod": "/data/cod.md",
+  "privacyNote": "/data/privacyNote.md",
   "footer": {
     "blog": "Blog"
   },
@@ -60,6 +61,11 @@
           "name": "Code of Conduct",
           "url": "/cod/",
           "newTab": true
+        },
+        {
+          "name": "Privacy Note",
+          "url": "/privacyNote/",
+          "newTab": false
         },
         {
           "name": "FAQs",

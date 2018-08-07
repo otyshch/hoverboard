@@ -26,8 +26,7 @@
     {
       "route": "speakers",
       "permalink": "/speakers/",
-      "label": "Speakers",
-      "status": "disabled"
+      "label": "Speakers"
     },
     {
       "route": "schedule",
@@ -50,7 +49,7 @@
   ],
   "heroSettings": {
     "home": {
-      "description": "Be a hero. Be a GDG!",
+      "description": "",
       "background": {
         "color": "#673ab7",
         "image": "/images/backgrounds/home.jpg"
@@ -113,6 +112,14 @@
         "color": "#fff"
       },
       "fontColor": "#424242"
+    },
+    "privacyNote": {
+      "title": "Privacy Note",
+      "metaDescription": "Privacy Note Statement",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#424242"
     }
   },
   "location": {
@@ -156,7 +163,7 @@
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/"
+        "url": "https://www.instagram.com/devfestpolandwroclaw/"
       },
       {
         "name": "twitter",

@@ -20,20 +20,33 @@
             .block-title {
                 margin: 24px 0 8px;
             }
+
+            .cta-button {
+              margin-top: 24px;
+              color: var(--default-primary-color);
+            }
         </style>
 
         <div class="container">
             <h1 class="container-title">{$ sponsorsBlock.title $}</h1>
 
-            <a class="cta-button animated icon-right" target="_blank" href="http://bit.ly/dfpl2018-sponsors">
-                <span>{$ sponsorsBlock.button $}</span>
-                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </a>
+          <paper-button class="cta-button animated icon-right" onclick="addLinc(this)">
+            <span>{$ sponsorsBlock.button $}</span>
+            <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+          </paper-button>
+
         </div>
 
     </template>
 
     <script>
+
+      function addLinc( el ) { // eslint-disable-line no-unused-vars
+        // Wait for ripple to finish.
+        addEventListener('transitionend', function () {
+          location.href = 'http://bit.ly/dfpl2018-sponsors';
+        });
+      }
 
       class SponsorsBlock extends ReduxMixin(Polymer.Element) {
         static get is() {

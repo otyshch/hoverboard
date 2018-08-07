@@ -1,15 +1,15 @@
 {
   "basepath": "/",
-  "url": "https://hoverboard-master.firebaseapp.com/",
-  "analytics": "UA-43643469-9",
+  "url": "https://devfestwroclawprod.firebaseapp.com",
+  "analytics": "UA-76181624-2",
   "prefix": "/",
   "firebase": {
-    "apiKey": "AIzaSyCaSkhtHekxAqXXzzbuNs2s6CpGdhZdta8",
-    "authDomain": "hoverboard-master.firebaseapp.com",
-    "databaseURL": "https://hoverboard-master.firebaseio.com",
-    "projectId": "hoverboard-master",
-    "storageBucket": "hoverboard-master.appspot.com",
-    "messagingSenderId": "516409946568"
+    "apiKey": "AIzaSyA7YPtEWoejeiBIOSREClZv4PfjOOGYMxM",
+    "authDomain": "devfestwroclawprod.firebaseapp.com",
+    "databaseURL": "https://devfestwroclawprod.firebaseio.com",
+    "projectId": "devfestwroclawprod",
+    "storageBucket": "devfestwroclawprod.appspot.com",
+    "messagingSenderId": "809543376346"
   },
-  "googleMapApiKey": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw"
+  "googleMapApiKey": "AIzaSyDHDqpNCN3LpV835mKRVQv_pfoYmu1hF1E"
 }

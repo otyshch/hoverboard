@@ -1,46 +1,32 @@
-## General
+## GDPR note
 
-### Dates and location
+### Data Controller
 
-GDG DevFest will take place in October in Wroclaw.
+The controller of your data (email, name, surname, gender, company, position, bio, image, voice and statement stored in photographic and video materials) is GDG DevFest Poland 2018 in Wrocław organizers team, an open and volunteer geeks who create exciting projects and share experience about Google technologies with a passion. Person responsible for the data can be found here: <>
 
-### Stay Informed
+### Legal basis and purposes of data processing
 
-To stay up to date on the latest information on sessions, speakers, and activities, be sure to visit the [DevFest Wroclaw website](https://wroclaw.devfest.pl/), RSVP on [Meetup]( https://www.meetup.com/GDG-Wroclaw/events/251728497/) and follow us on [Facebook](https://www.facebook.com/events/2156621857903104/). You can also follow and join the social conversation about GDG DevFest Wroclaw via official hashtags #dfwropl18 and #Devfest18. In addition, we'll be emailing important information to all registered attendees, along with check-in instructions prior to the conference.
+Your data will be processed based on your freely given consent (Article 6 (1) (a) GDPR). We are processing your data because of your consent to participate in GDG DevFest Poland 2018 in Wrocław conference. Without your consent, we cannot inform you about our products and services.
+Your data will be processed in order to maintain your account on the website, maintain subscriptions and inform you about news, proceed your application and, if accepted, inform about your participation as a speaker on our website and on social media. We take care about your data and do not use it to send unsolicited commercial communication.
+We may process your data also in connection with the investigation / defense of claims or for direct marketing purposes as the legitimate interest of the data controller (Article 6 (1) (f) GDPR).
 
-### Content Formats
+### Data sources
 
-During two conference days attendees will be able to attend sessions and hands-on workshops, chat with experts and attendees at coffee breaks and after party, and more.
+We have obtained your data directly from you.
 
-### Livestream & Recordings
+### Storage period of personal data
 
-If you’re unable to attend DevFest in-person, you can still be part of the magic. All the lectures from the sessions will be available for free on GDG Wroclaw [youtube channel](#) few weeks after the conference. Workshops won’t be recorded. Also, there could be a livestream provided by participants which you can find via #dfua and #Devfest18 hashtags.
+Your data will be stored until you withdraw your consent. We are entitled to store your data until the expiry of limitation period for claims.
+You have the right to withdraw your consent at any time. The withdrawal of the consent will not affect the lawfulness of the processing of data which was carried out on the basis of the consent prior to its withdrawal.
 
-  
-## Registration
+### Recipients of personal data
 
+Your data may be transferred to entities cooperating with us, in particular to members of GDG DevFest Poland 2018 in Wrocław organizers team.
+In case when the consent is given for publication of my data on Facebook and Instagram, it can be shared with Facebook Ireland Ltd., 4 Grand Canal Square, Dublin, Irlandia and Facebook, Inc., 1601 Willow Road, Menlo Park, CA 94025, USA.
+In case when the consent is given for publication of my data on Youtube, it can be shared with Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+In case when the consent is given for publication of my data on Twitter, it can be shared with Twitter, Inc,. 1355 Market St Ste 900, SAN FRANCISCO   CA   94103-1337, USA.
+This may mean that my data may be transferred to United States of America, where different provisions that may not provide sufficient level of protection are applied. My data will be transferred by Facebook or Youtube on its servers for back-up purposes or other purposes involving Facebook or Youtube activity.
+ 
+### Rights regarding personal data protection
 
-### Drawing Dates
-
-The window to buy a ticket will be opened soon. 
-  
-
-## Attendance Details
-
-### Language
-
-All presentations at GDG DevFest will be in English.
-  
-  
-### Event Attire
-
-GDG DevFest is a developer event, so please be comfortable and casual. There is no enforced dress code.
-
-
-### Smoking
-
-Smoking is only permitted in designated outdoor smoking areas.
-
-### No Soliciting
-
-No solicitation or selling of items or services is allowed at GDG DevFest Wroclaw. Any attendee conducting these activities may be removed from the conference.
+Remember that to the extent provided by the provisions of law you have the following rights: the right to request access to your personal data, rectification, erasure of data, restriction of processing as well as the right to object to processing, data portability and the right to lodge a complaint with a supervisory authority, i.e. the President of the Office for the Protection of Personal Data. If you have any questions regarding those rights or you would like to exercise them, contact us at: [wroclawgdg@gmail.com](mailto:wroclawgdg@gmail.com) 
