@@ -37,8 +37,7 @@
     {
       "route": "team",
       "permalink": "/team/",
-      "label": "Team",
-      "status": "disabled"
+      "label": "Team"
     },
     {
       "route": "C4P",
