@@ -21,19 +21,58 @@
                 margin: 24px 0 8px;
             }
 
+            .logos-wrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-gap: 8px;
+            }
+
+            .logo-item {
+                padding: 24px;
+            }
+
+            .logo-img {
+                height: 60px;
+                width: 100%;
+            }
+
             .cta-button {
-              margin-top: 24px;
-              color: var(--default-primary-color);
+                margin-top: 24px;
+                color: var(--default-primary-color);
+            }
+
+            @media (min-width: 640px) {
+                .logos-wrapper {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            @media (min-width: 812px) {
+                .logos-wrapper {
+                    grid-template-columns: repeat(5, 1fr);
+                }
             }
         </style>
 
         <div class="container">
             <h1 class="container-title">{$ sponsorsBlock.title $}</h1>
 
-          <paper-button class="cta-button animated icon-right" onclick="addLinc(this)">
-            <span>{$ sponsorsBlock.button $}</span>
-            <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-          </paper-button>
+            <template is="dom-repeat" items="[[sponsors]]" as="block" filter="isNotEmpty">
+                <h4 class="block-title">[[block.title]]</h4>
+                <div class="logos-wrapper">
+                    <template is="dom-repeat" items="[[block.items]]" as="logo">
+                        <a class="logo-item card" href$="[[logo.url]]" title$="[[logo.name]]" target="_blank" rel="noopener noreferrer" layout horizontal
+                            center-center>
+                            <plastic-image class="logo-img" srcset="[[logo.logoUrl]]" sizing="contain" lazy-load preload fade></plastic-image>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <paper-button class="cta-button animated icon-right" onclick="addLinc(this)">
+                <span>{$ sponsorsBlock.button $}</span>
+                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+            </paper-button>
 
         </div>
 
@@ -41,17 +80,17 @@
 
     <script>
 
-      function addLinc( el ) { // eslint-disable-line no-unused-vars
-        // Wait for ripple to finish.
-        addEventListener('transitionend', function () {
-          location.href = 'http://bit.ly/dfpl2018-sponsors';
-        });
-      }
-
-      class SponsorsBlock extends ReduxMixin(Polymer.Element) {
-        static get is() {
-            return 'sponsors-block';
+      function addLinc(el) { // eslint-disable-line no-unused-vars
+            // Wait for ripple to finish.
+            addEventListener('transitionend', function () {
+                location.href = 'http://bit.ly/dfpl2018-sponsors';
+            });
         }
+
+        class SponsorsBlock extends ReduxMixin(Polymer.Element) {
+            static get is() {
+                return 'sponsors-block';
+            }
 
             static get properties() {
                 return {

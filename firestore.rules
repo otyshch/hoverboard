@@ -76,6 +76,39 @@ service cloud.firestore {
       allow write;
     }
 
+      match /sponsors/{groupId} {
+      // Applies to single document read requests
+      allow get;
+
+      // Applies to queries and collection read requests
+      allow list;
+
+      // Disallow writes
+      allow write: if false;
+
+      match /items/{itemId} {
+        // Applies to single document read requests
+        allow get;
+
+        // Applies to queries and collection read requests
+        allow list;
+
+        // Disallow writes
+        allow write: if false;
+      }
+    }
+
+    match /potentialSponsors/{sponsorId} {
+      allow delete: if false;
+
+      allow get;
+      allow list: if false;
+
+      // Applies to document create requests
+      //allow create;
+      allow write;
+    }
+
     match /previousSpeakers/{speaker} {
       // Applies to single document read requests
       allow get;

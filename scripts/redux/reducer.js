@@ -133,6 +133,49 @@ const partnersReducer = (state = initialState.partners, action) => {
   }
 };
 
+const sponsorsReducer = (state = initialState.sponsors, action) => {
+  switch (action.type) {
+    case FETCH_SPONSORS:
+      return Object.assign({}, state, {
+        fetching: true,
+        fetchingError: null,
+        list: [],
+      });
+
+    case FETCH_SPONSORS_FAILURE:
+      return Object.assign({}, state, {
+        fetching: false,
+        fetchingError: action.payload.error,
+      });
+
+    case FETCH_SPONSORS_SUCCESS:
+      return Object.assign({}, state, {
+        fetching: false,
+        list: action.payload.list,
+      });
+
+    case ADD_POTENTIAL_SPONSORS:
+      return Object.assign({}, state, {
+        adding: true,
+        addingError: null,
+      });
+
+    case ADD_POTENTIAL_SPONSOR_FAILURE:
+      return Object.assign({}, state, {
+        adding: false,
+        addingError: action.payload.error,
+      });
+
+    case ADD_POTENTIAL_SPONSOR_SUCCESS:
+      return Object.assign({}, state, {
+        adding: false,
+      });
+
+    default:
+      return state;
+  }
+};
+
 const videosReducer = (state = initialState.videos, action) => {
   switch (action.type) {
     case FETCH_VIDEOS:

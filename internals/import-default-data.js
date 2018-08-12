@@ -101,6 +101,34 @@ const importPartners = () => {
     });
 };
 
+const importSponsors = () => {
+  const sponsors = data.sponsors;
+  console.log('\tImporting sponsors...');
+
+  const batch = firestore.batch();
+
+  Object.keys(sponsors).forEach((docId) => {
+    batch.set(
+      firestore.collection('sponsors').doc(docId),
+      { title: sponsors[docId].title },
+    );
+
+    sponsors[docId].logos.forEach((item, id) => {
+      batch.set(
+        firestore.collection('sponsors').doc(`${docId}`).collection('items').doc(`${id}`.padStart(3, 0)),
+        item,
+      );
+    })
+  });
+
+  return batch.commit()
+    .then(results => {
+      console.log('\tImported data for', results.length, 'documents');
+      return results;
+    });
+};
+
+
 const importGallery = () => {
   const gallery = data.gallery;
   console.log('\tImporting gallery...');
@@ -255,6 +283,7 @@ initializeFirebase()
   .then(() => importBlog())
   .then(() => importGallery())
   .then(() => importNotificationsConfig())
+  .then(() => importSponsors())
   .then(() => importPartners())
   .then(() => importPreviousSpeakers())
   .then(() => importSchedule())
