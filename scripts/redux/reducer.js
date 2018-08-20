@@ -154,7 +154,7 @@ const sponsorsReducer = (state = initialState.sponsors, action) => {
         list: action.payload.list,
       });
 
-    case ADD_POTENTIAL_SPONSORS:
+    case ADD_POTENTIAL_SPONSOR:
       return Object.assign({}, state, {
         adding: true,
         addingError: null,
