@@ -29,7 +29,12 @@
                     }
                     break;
                   case 'redundant':
-                    throw Error('The installing service worker became redundant.');
+                    registration.unregister().then((unregisterStatus) => {
+                       if ( unregisterStatus == true) {
+                         register();
+                       }
+                    });
+                    // throw Error('The installing service worker became redundant.');
                 }
               };
             };

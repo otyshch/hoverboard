@@ -27,7 +27,7 @@
 
       :host([transparent]) .toolbar-logo {
         /* background-color: var(--hero-logo-color); */
-        opacity: 1;
+        opacity: var(--hero-logo-opacity, 1);
       }
 
       app-toolbar {
@@ -154,10 +154,10 @@
 
         <!--<paper-tab class="signin-tab" on-tap="signIn" link hidden$="[[user.signedIn]]">{$ signIn $}</paper-tab>-->
 
-        <!--<a href$="[[_getTicketUrl(tickets)]]" rel="noopener noreferrer" ga-on="click"-->
-        <!--ga-event-category="ticket button" ga-event-action="buy_click">-->
-        <!--<paper-button class="buy-button" primary disabled>{$ buyTicket $}</paper-button>-->
-        <!--</a>-->
+        <a href="{$ buyTicketUrl $}" rel="noopener noreferrer" ga-on="click"
+        ga-event-category="ticket button" ga-event-action="buy_click">
+        <paper-button class="buy-button" primary >{$ buyTicket $}</paper-button>
+        </a>
       </paper-tabs>
 
       <paper-menu-button id="notificationsMenu" class="notifications-menu" vertical-align="top" horizontal-align="right" no-animations>

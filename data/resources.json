@@ -1,5 +1,5 @@
 {
-  "title": "GDG DevFest Wroclaw 2018",
+  "title": "GDG DevFest Poland 2018 in Wroclaw",
   "description": "",
   "image": "/images/social-share.png",
   "keywords":
@@ -12,7 +12,8 @@
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
-  "buyTicket": "Tickets available soon",
+  "buyTicket": "Buy ticket",
+  "buyTicketUrl": "https://gdg-devfest-poland-2018-in-wroclaw.eventbrite.com/",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "viewHighlights": "View Highlights",
