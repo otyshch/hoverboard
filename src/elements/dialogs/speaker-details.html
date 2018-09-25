@@ -44,6 +44,13 @@
       .section-bold-text{
         font-weight: bold;
       }
+      .description1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .session-title {
+        margin-bottom: 10px;
+      }
 
     </style>
 
@@ -115,11 +122,16 @@
             <!--<a href$="/schedule?sessionId=[[session.id]]" on-tap="_openSession" session-id$="[[session.id]]" class="section">-->
               <div layout horizontal center>
                 <div class="section-details" flex>
-                  <div class="section-primary-text section-bold-text">[[session.title]]</div>
+                  <div class="section-primary-text section-bold-text session-title">[[session.title]]</div>
                   <!--<div class="section-secondary-text" hidden$="[[!session.dateReadable]]">[[session.dateReadable]],-->
                     <!--[[session.startTime]] - [[session.endTime]]-->
                   <!--</div>-->
                   <div class="section-primary-text" hidden$="[[!session.description]]">[[session.description]]</div>
+                  <div>
+                    <template is="dom-repeat" items="[[session.description1]]" as="description1">
+                      <p class="description1" slot="markdown-html">[[description1]]</p>
+                    </template>
+                  </div>
                   <div class="section-secondary-text" hidden$="[[!session.track.title]]">[[session.track.title]]</div>
                   <div class="tags" hidden$="[[!session.tags.length]]">
                     <template is="dom-repeat" items="[[session.tags]]" as="tag">

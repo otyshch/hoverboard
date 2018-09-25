@@ -110,8 +110,8 @@ self.addEventListener('message', ({ data }) => {
             speakers: subsession.speakers ? subsession.speakers.map((speakerId) => Object.assign({
               id: speakerId,
             }, speakersRaw[speakerId], {
-              sessions: null,
-            })) : [],
+                sessions: null,
+              })) : [],
           });
 
           subSessions.push(finalSubSession);
@@ -127,9 +127,9 @@ self.addEventListener('message', ({ data }) => {
 
         const start = `${timeslotsIndex + 1} / ${sessionIndex + 1}`;
         const end = `${timeslotsIndex +
-        (timeslot.sessions[sessionIndex].extend || 0) + 1} / ${sessionsLen !== 1
-          ? sessionIndex + 2 : Object.keys(extensions).length ? Object.keys(extensions)[0]
-            : tracksNumber + 1}`;
+          (timeslot.sessions[sessionIndex].extend || 0) + 1} / ${sessionsLen !== 1
+            ? sessionIndex + 2 : Object.keys(extensions).length ? Object.keys(extensions)[0]
+              : tracksNumber + 1}`;
 
         if (timeslot.sessions[sessionIndex].extend) {
           extensions[sessionIndex + 1] = timeslot.sessions[sessionIndex].extend;

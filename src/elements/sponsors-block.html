@@ -35,7 +35,20 @@
                 height: 60px;
                 width: 100%;
             }
+            .gold {
+				height: 95px !important;
+				width: 100%;
+			}
 
+			.silver {
+				height: 80px !important;
+				width: 100%;
+			}
+
+            .bronze {
+                height: 70px !important;
+				width: 100%;
+            }
             .cta-button {
                 margin-top: 24px;
                 color: var(--default-primary-color);
@@ -61,9 +74,10 @@
                 <h4 class="block-title">[[block.title]]</h4>
                 <div class="logos-wrapper">
                     <template is="dom-repeat" items="[[block.items]]" as="logo">
-                        <a class="logo-item card" href$="[[logo.url]]" title$="[[logo.name]]" target="_blank" rel="noopener noreferrer" layout horizontal
-                            center-center>
-                            <plastic-image class="logo-img" srcset="[[logo.logoUrl]]" sizing="contain" lazy-load preload fade></plastic-image>
+                        <a class="logo-item card" href$="[[logo.url]]" title$="[[logo.name]]" target="_blank" rel="noopener noreferrer"
+                            layout horizontal center-center>
+                            <plastic-image class$="logo-img [[logo.type]]" srcset="[[logo.logoUrl]]" sizing="contain" lazy-load
+                                preload fade></plastic-image>
                         </a>
                     </template>
                 </div>
@@ -79,19 +93,16 @@
     </template>
 
     <script>
-
       function addLinc(el) { // eslint-disable-line no-unused-vars
             // Wait for ripple to finish.
             addEventListener('transitionend', function () {
                 location.href = 'http://bit.ly/dfpl2018-sponsors';
             });
         }
-
         class SponsorsBlock extends ReduxMixin(Polymer.Element) {
             static get is() {
                 return 'sponsors-block';
             }
-
             static get properties() {
                 return {
                     sponsors: {
@@ -117,24 +128,20 @@
                     },
                 };
             }
-
             connectedCallback() {
                 super.connectedCallback();
                 if (!this.sponsorsFetching && (!this.sponsors || !this.sponsors.length)) {
                     this.dispatch(sponsorsActions.fetchSponsors());
                 }
             }
-
             isNotEmpty(item) {
                 return item.items.length > 0;
             }
-
             _addPotentialSponsor() {
                 dialogsActions.openDialog(DIALOGS.INFO, {
                     title: '{$ sponsorsBlock.form.title $}',
                 });
             }
-
             _sponsorAddingChanged(newSponsorAdding, oldSponsorAdding) {
                 if (oldSponsorAdding && !newSponsorAdding) {
                     if (this.sponsorAddingError) {
@@ -146,7 +153,6 @@
                 }
             }
         }
-
         window.customElements.define(SponsorsBlock.is, SponsorsBlock);
     </script>
 </dom-module>

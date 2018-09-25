@@ -31,8 +31,7 @@
     {
       "route": "schedule",
       "permalink": "/schedule/",
-      "label": "Schedule",
-      "status": "disabled"
+      "label": "Schedule"
     },
     {
       "route": "team",
@@ -206,11 +205,7 @@
         "url": "https://twitter.com"
       }
     ],
-    "allowedProvidersUrl": [
-      "https://accounts.google.com",
-      "https://www.facebook.com",
-      "https://twitter.com"
-    ]
+    "allowedProvidersUrl": ["https://accounts.google.com", "https://www.facebook.com", "https://twitter.com"]
   },
   "contentLoaders": {
     "schedule": {

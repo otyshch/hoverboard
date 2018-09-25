@@ -25,6 +25,7 @@
     <polymer-helmet
       title="[[session.title]] | {$ title $}"
       description="[[session.description]]"
+      description1="[[session.description1]]"
       image="[[session.speakers.0.photoUrl]]"
       active="[[opened]]"
       label1="{$ time $}"
@@ -43,6 +44,11 @@
         <app-toolbar>
           <div class="dialog-container header-content" layout vertical end-justified>
             <h2 class="name">[[session.title]]</h2>
+              <div hidden$="[[!session.description1.length]]">
+                <template is="dom-repeat" items="[[session.description1]]" as="description1">
+                  <span class="tag">[[description1]]</span>
+                </template>
+              </div>
             <div class="tags" hidden$="[[!session.tags.length]]">
               <template is="dom-repeat" items="[[session.tags]]" as="tag">
                 <span class="tag" style$="color: [[_getTagColor(tag)]]">[[tag]]</span>
@@ -76,6 +82,14 @@
         <marked-element class="description" markdown="[[session.description]]">
           <div slot="markdown-html"></div>
         </marked-element>
+        <div>
+          <template is="dom-repeat" items="[[session.description1]]" as="description1">
+            <p slot="markdown-html">[[description1]]</p>
+          </template>
+        </div>
+        <!-- <marked-element class="description1" markdown="[[session.description1]]">
+          <div slot="markdown-html"></div>
+        </marked-element> -->
 
         <div class="actions" layout horizontal>
           <a
@@ -115,7 +129,7 @@
 
                 <div class="section-details" flex>
                   <div class="section-primary-text">[[speaker.name]]</div>
-                  <div class="section-secondary-text">[[speaker.company]] / [[speaker.country]]</div>
+                  <div class="section-secondary-text">[[speaker.company]] // [[speaker.country]]</div>
                 </div>
               </div>
             </a>

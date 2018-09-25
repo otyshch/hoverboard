@@ -14,7 +14,7 @@ During two conference days attendees will be able to attend sessions and hands-o
 
 ### Livestream & Recordings
 
-If you’re unable to attend DevFest in-person, you can still be part of the magic. All the lectures from the sessions will be available for free on GDG Wroclaw [youtube channel](#) few weeks after the conference. Workshops won’t be recorded. Also, there could be a livestream provided by participants which you can find via #dfua and #Devfest18 hashtags.
+If you’re unable to attend DevFest in-person, you can still be part of the magic. All the lectures from the sessions will be available for free on GDG Wroclaw [youtube channel](#) few weeks after the conference. Workshops won’t be recorded. Also, there could be a livestream provided by participants which you can find via #dfpl and #Devfest18 hashtags.
 
   
 ## Registration
