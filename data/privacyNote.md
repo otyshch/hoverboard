@@ -2,7 +2,7 @@
 
 ### Data Controller
 
-The controller of your data (email, name, surname, gender, company, position, bio, image, voice and statement stored in photographic and video materials) is GDG DevFest Poland 2018 in Wrocław organizers team, an open and volunteer geeks who create exciting projects and share experience about Google technologies with a passion. Person responsible for the data can be found here: [Team](team/)
+The controller of your data (email, phone number, name, surname, gender, company, position, bio, image,  voice and statement stored in photographic and video materials) is GDG DevFest Poland 2018 in Wrocław organizers team, an open and volunteer geeks who create exciting projects and share experience about Google technologies with a passion. Person responsible for the data can be found here: [Team](team/)
 
 ### Legal basis and purposes of data processing
 

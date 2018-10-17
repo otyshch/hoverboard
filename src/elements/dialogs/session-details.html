@@ -21,7 +21,12 @@
 <dom-module id="session-details">
   <template>
     <style is="custom-style" include="shared-styles dialog-styles flex flex-alignment positioning"></style>
-
+    <style>
+      .description1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      </style>
     <polymer-helmet
       title="[[session.title]] | {$ title $}"
       description="[[session.description]]"
@@ -44,11 +49,11 @@
         <app-toolbar>
           <div class="dialog-container header-content" layout vertical end-justified>
             <h2 class="name">[[session.title]]</h2>
-              <div hidden$="[[!session.description1.length]]">
+              <!-- <div hidden$="[[!session.description1.length]]">
                 <template is="dom-repeat" items="[[session.description1]]" as="description1">
-                  <span class="tag">[[description1]]</span>
+                  <span class="description1">[[description1]]</span>
                 </template>
-              </div>
+              </div> -->
             <div class="tags" hidden$="[[!session.tags.length]]">
               <template is="dom-repeat" items="[[session.tags]]" as="tag">
                 <span class="tag" style$="color: [[_getTagColor(tag)]]">[[tag]]</span>
